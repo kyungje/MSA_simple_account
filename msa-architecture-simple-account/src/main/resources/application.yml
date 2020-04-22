@@ -1,0 +1,20 @@
+server:
+  port: ${msa-server.simple-account.port}
+#Eureka Standalone Server
+eureka: 
+  client:
+    service-url:
+      defaultZone: ${eureka.client.service-url.defaultZone}
+#All information are exposed - env, beans ..
+management:  endpoints:    web:      exposure:        include: "*"
+#DB connection
+spring:
+  datasource:
+    hikari:
+      driver-class-name: ${msa-server.simple-account.datasource.driver-class-name}
+      jdbc-url: ${msa-server.simple-account.datasource.jdbc-url} 
+      username: ${msa-server.simple-account.datasource.username}
+      password: ${msa-server.simple-account.datasource.password}
+      maximum-pool-size: ${msa-server.simple-account.datasource.maximum-pool-size}
+mybatis:
+  mapper-locations: /mapper/*.xml

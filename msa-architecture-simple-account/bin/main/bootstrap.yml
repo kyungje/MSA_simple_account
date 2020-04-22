@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: msa-architecture-simple-account
+  cloud:
+    config:
+      uri:  http://52.79.120.13:10001 
+      name: config
+      profile: ${spring.profiles.active}    

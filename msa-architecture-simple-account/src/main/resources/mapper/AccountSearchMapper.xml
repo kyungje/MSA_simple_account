@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper
+	namespace="com.sk.msa.springboot.repository.mapper.IAccountMapper">
+	<select id="findAllAccountInfoByAccountSeq" resultType="com.sk.msa.springboot.repository.rvo.AccountVO">
+		SELECT account_seq as accountSeq
+		     , account_name as accountName
+		     , member_id as memberId
+		     , amount    as amount 
+		  FROM account_t 
+		 WHERE account_seq = #{accountSeq}
+	</select>
+</mapper>
