@@ -5,6 +5,7 @@ eureka:
   client:
     service-url:
       defaultZone: ${eureka.client.service-url.defaultZone}
+  instance:    prefer-ip-address: true
 #All information are exposed - env, beans ..
 management:  endpoints:    web:      exposure:        include: "*"
 #DB connection
