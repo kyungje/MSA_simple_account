@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <included>
-    <property name="LOGS_ABSOLUTE_PATH" value="./log" />
+    <property name="LOGS_ABSOLUTE_PATH" value="/var/app" />
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
