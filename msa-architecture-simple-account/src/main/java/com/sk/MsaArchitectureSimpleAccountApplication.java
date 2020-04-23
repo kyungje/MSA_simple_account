@@ -9,7 +9,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableCircuitBreaker
 @SpringBootApplication
 public class MsaArchitectureSimpleAccountApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(MsaArchitectureSimpleAccountApplication.class, args);
 	}
