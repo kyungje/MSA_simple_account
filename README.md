@@ -70,5 +70,3 @@
 - [Spring Boot 공식 문서](https://spring.io/projects/spring-boot)
 - [마이크로서비스 아키텍처 개요](https://martinfowler.com/articles/microservices.html)
 ```
-
-이 파일을 프로젝트 루트 디렉토리에 `README.md`로 저장하시면 됩니다. 추가적인 요구 사항이 있다면 알려주세요!
